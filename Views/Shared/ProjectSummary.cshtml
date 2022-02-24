@@ -1,0 +1,23 @@
+﻿@*
+    This is to see the Partial views of the project
+*@
+@model Book
+
+    <div class="card card-outline-primay m-1 p-1">
+        
+        <div class="bg-light p-1">
+            <h4>@Model.Title</h4>
+            <span class="badge bg-info" style="float:left">
+                Classification/Category: @Model.Category
+            </span>
+        </div>
+
+        <ul>
+            <li>Author: @Model.Author</li>
+            <li>Publisher: @Model.Publisher</li>
+            <li>ISBN: @Model.ISBN</li>
+            <li>Classification/Category: @Model.Classification/@Model.Category</li>
+            <li>Number of Pages : @Model.PageCount</li>
+            <li>Price : $@Model.Price</li>
+        </ul>
+    </div>
